@@ -1,0 +1,12 @@
+#my_table
+{
+    
+    background-color:#ffffff7e
+}
+
+#my_table th,td
+{
+        border-radius: 3px;
+        border: 1px solid black;
+        background-color: rgba(247, 41, 41, 0.176);
+}
