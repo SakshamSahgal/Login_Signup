@@ -42,11 +42,17 @@
 
 #Enter
 {
+    border-radius: 10px;
     margin-top: 8%;
     margin-left: 25%;
     position: absolute;
     border-style: dotted dashed solid double;
     width: 700px;
     height: 500px;
-    background-image: ;
+    background-image: url("../GUI_Resources/sky.png");
+}
+
+body{
+    background-image: url("../GUI_Resources/background.png"); 
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
