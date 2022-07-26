@@ -53,4 +53,4 @@ if (Check_email($email, $password, $conn)) //success
 }
     
 else
-    echo "<p> Either email or password is incorrect </p> <a href='../index.php'>Index Page</a>";
+    header("location: ../Directories/wrong_credentials.php");

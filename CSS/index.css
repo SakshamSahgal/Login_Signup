@@ -50,6 +50,7 @@
     width: 700px;
     height: 500px;
     background-image: url("../GUI_Resources/sky.png");
+    opacity: 0.5%;
 }
 
 body{

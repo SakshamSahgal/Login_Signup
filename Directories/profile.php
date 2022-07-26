@@ -3,18 +3,22 @@ session_start();
 ?>
 <html>
 <head>
-    <title>Document</title>
+    <title>Profile</title>
 </head>
-    <link rel="stylesheet" href="../CSS/final.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
 <body>
-    <?php 
-        echo "Welcome " . $_SESSION['email'] ." ". $_SESSION['first_name'] ." ". $_SESSION['last_name'] . " ". $_SESSION['password'];
-    ?>
-    <table id="my_table">
-        <tr>
-            <td>UserID</td><td>Password</td>
-        </tr>
-    </table>
-    <script src="../JS/Table_Control.js"></script>
+
+    <div id="Profile_Pallet" align="Center">
+        <div id="Profile_Photo">     
+        </div>
+        <div id="details">
+            <table id="profile_table" >
+                <tr> <td align="Center"> Email : </td>  <td align="Center"> <?php  echo $_SESSION['email']; ?></td> </tr>
+                <tr> <td align="Center"> First Name : </td>  <td align="Center">  <?php  echo $_SESSION['first_name']; ?></td> </tr>
+                <tr> <td align="Center"> Last Name : </td>  <td align="Center"> <?php  echo $_SESSION['last_name']; ?></td> </tr>
+            </table>
+        </div>
+    </div>
+    
 </body>
 </html>

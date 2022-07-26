@@ -45,7 +45,7 @@ function insert_data($conn, $email, $first_name, $last_name, $password)
 
 
 if (email_exist($email,$conn)) {
-  echo " <p> email already exists. </p>  <a href='../index.php'>Index Page</a>";
+  header("location: ../Directories/already_exist.php");
 } else {
   insert_data($conn, $email, $first_name, $last_name, $password);
   //Login Success , Proceeding to the next page

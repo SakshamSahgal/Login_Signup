@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Document</title>
+    <title>Login/Signup</title>
 </head>
 
 <body>
