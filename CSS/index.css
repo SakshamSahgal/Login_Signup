@@ -30,12 +30,14 @@
 
 #inner_Div_Signup
 {
+    z-index: 1;
     margin-top: 10%;
     margin-left: 5%;
 }
 
 #inner_Div_Login
 {
+    z-index: 1;
     margin-top: 10%;
     margin-left: 5%;
 }
@@ -50,10 +52,9 @@
     width: 700px;
     height: 500px;
     background-image: url("../GUI_Resources/sky.png");
-    opacity: 0.5%;
 }
 
-body{
+ body{
     background-image: url("../GUI_Resources/background.png"); 
     background-size: cover; /* Resize the background image to cover the entire container */
-}
+} 

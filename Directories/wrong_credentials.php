@@ -8,6 +8,5 @@
     <p>Either email or password is incorrect , please try again</p>
     <a href="../index.php">Try Again</a>    
     </div>
-    
 </body>
 </html>

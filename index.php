@@ -5,10 +5,15 @@
 </head>
 
 <body>
+    <?php 
+        session_start();
+        //checking if already logged in 
+        if(isset($_SESSION['email']))
+            header("location: Directories/profile.php");
+    ?>
     <link rel="stylesheet" href="CSS/index.css">
     <div id="Enter">
-        <div id="Signup" align = "Center"> 
-            
+        <div id="Signup" align = "Center">
             <div id="inner_Div_Signup">
                 <h3>SIGN UP</h3>
                 <form action="ServerSidePHP/Signup.php" method="POST">
@@ -26,7 +31,6 @@
         </div>
 
         <div id="login" align = "Center">
-        
             <div id="inner_Div_Login">
             <h3>LOGIN</h3>
                 <form action="ServerSidePHP/Login.php" method="POST">
