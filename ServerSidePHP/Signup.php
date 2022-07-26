@@ -1,7 +1,11 @@
 <?php
 
-session_start();
-$conn = mysqli_connect("localhost", "root", "", "user_database");
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASS','');
+define('DB_NAME','user_database');
+
+$conn = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
 
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -32,6 +36,7 @@ function insert_data($conn, $email, $first_name, $last_name, $password)
   mysqli_query($conn, $insert_into_database_querry);
 
   //setting session 
+  session_start();
   $_SESSION['email'] = $email;
   $_SESSION['first_name'] = $first_name;
   $_SESSION['last_name'] = $last_name;
@@ -44,5 +49,5 @@ if (email_exist($email,$conn)) {
 } else {
   insert_data($conn, $email, $first_name, $last_name, $password);
   //Login Success , Proceeding to the next page
-  header("location: ../final.php");
+  header("location: ../Directories/profile.php");
 }
